@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void loadPlus(){
-        DexClassLoader dexClassLoader = new DexClassLoader(new File(getFilesDir(), "plus.jar").getPath(), "/data/data/com.chuyao.dynamicdex", null, this.getClass().getClassLoader());
+        DexClassLoader dexClassLoader = new DexClassLoader(new File(getFilesDir(), "plus.jar").getPath(), "/data/data/com.imfclub.dynamicdex", null, this.getClass().getClassLoader());
         try {
             Class<?> clazz = dexClassLoader.loadClass("com.imfclub.remote.Plus");
             Object obj = clazz.newInstance();
