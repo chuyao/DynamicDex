@@ -9,33 +9,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.chuyao.dynamicdex.MainActivity">
 
+    <Button
+        android:id="@+id/btPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="plus" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal">
+        android:layout_gravity="bottom|end">
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1" />
+
         <Button
-            android:id="@+id/btPlus"
+            android:id="@+id/btDownload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="plus"/>
-        <EditText
-            android:id="@+id/tvLog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:editable="false"
-            android:foregroundGravity="bottom"
-            android:minLines="5"
-            android:maxLines="5"/>
+            android:text="download" />
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/btDownload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:text="download"/>
 
 </FrameLayout>
