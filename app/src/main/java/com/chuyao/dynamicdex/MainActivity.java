@@ -126,24 +126,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             etLog.setText(stringBuilder);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-            stringBuilder.append("ClassNotFoundException").append("\n");
-            etLog.setText(stringBuilder);
         } catch (InstantiationException e) {
             e.printStackTrace();
-            stringBuilder.append("InstantiationException").append("\n");
-            etLog.setText(stringBuilder);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
-            stringBuilder.append("IllegalAccessException").append("\n");
-            etLog.setText(stringBuilder);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
-            stringBuilder.append("NoSuchMethodException").append("\n");
-            etLog.setText(stringBuilder);
         } catch (InvocationTargetException e) {
             e.printStackTrace();
-            stringBuilder.append("InvocationTargetException").append("\n");
-            etLog.setText(stringBuilder);
         }
     }
 
